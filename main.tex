@@ -1,0 +1,61 @@
+\documentclass{amsart}
+
+\title{Bridgeland Stability Seminar}
+\author{ANU 2025}
+
+\newcommand{\me}[1]{\marginpar{\small{#1}}}
+
+\begin{document}
+
+\maketitle
+
+\section{Why is a derived category?}
+\me{Anand}
+
+This is an important question to keep in mind.  I hope you find your own answers to this question.
+
+The most common answer I have heard is that it is the ``right framework'' to work with complexes and their cohomology, that is, to do homological algebra.  I have also heard the counterpoint that we should just work with complexes and do honest homological algebra instead of inventing a categorical framework.  I am sympathetic to both sentiments.
+
+\section{What is a derived category?}
+
+Chapter 2 of \cite{fmtag} (mostly 2.1).
+
+Questions to think about.
+\begin{enumerate}
+\item Exercise 2.6. Read what is expected of ``distinguished triangles'' (axioms TR1 to TR4 Chapter 1) and explain Exercise 2.6.
+\item Exercise 2.25.  Describe \(D(\operatorname{vec} (k))\).
+
+\item Exercise 2.27 is wrong.  A short-exact sequence in \(\mathcal{A}\) does not necessarily become a distinguished triangle in \(K(\mathcal{A})\) (the given procedure only works in \(D(\mathcal{A})\)).  Explain this.
+
+  Precisely, give an example of a short exact sequence of \(\mathbf{Z}\)-modules
+  \[ 0 \to A \to B \to C \to 0\]
+  in which \(C\) is not isomorphic to the cone of \(A \to B\) in \(K(\mathbf{Z})\).
+  Is \(C\) isomorphic to the cone in \(D(\mathbf{Z})\)?
+
+\item Suppose \(A\) is a complex such that \(H^n(A) = 0\) for all \(n\).
+  Is it true that \(A = 0\)?
+  Is the same true in \(K(\mathcal{A})\)?
+
+\item Suppose \(f \colon A \to B\) is a  map of complexes that induces the \(0\) map \(H^n(A) \to H^n(B)\) for all \(n\).
+  Show, with an example, that this does not mean that \(f\) is the zero map in \(D(\mathcal{A})\).
+
+\item The cohomology filtration.
+  Explain the truncations of a complex.
+  If the complex is bounded (or has bounded cohomology), explain how this leads to a ``filtration'' of a complex by its cohomology objects.
+
+\item Prove that in \(D^b(\mathbf{Z})\), a complex is isomorphic to the direct sum of the shifts of its cohomology objects.
+
+  This statement seems to be in tension with the (false) statement that if we have a short exact sequence
+\[ 0 \to A \to B \to C \to 0\]
+in \(\mathbf{Z}-\operatorname{mod}\), then \(B\) is the direct sum of \(A\) and \(C\).
+Reconcile the two.
+  
+\end{enumerate}
+
+
+
+\begin{thebibliography}{1}
+  \bibitem[FMTAG]{fmtag} D. Huybrechts, \emph{Fourier--Mukai Transforms in Algebraic Geometry}.
+\end{thebibliography}
+
+\end{document}
